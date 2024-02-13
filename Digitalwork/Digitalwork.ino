@@ -1,3 +1,6 @@
+//shared with Mr Hansen Successfully
+//use auto format in the tools menu to fix indents
+//your code also has all the same errors as Pieter's...
 const byte LEDPIN = 12;
   const byte PAWPIN1 = 1;
   const byte PAWPIN2 = 2;
@@ -9,30 +12,31 @@ const byte LEDPIN = 12;
 Servo leftEar;
 servo rightEar;
 
-  void setup() € pinMode(LEDPIN, OUTPUT);
-  pinMode(PAWPIN1, INPUT)
-    : pinMode(PAWPIN2, INPUT);
-  pinMode(PAWPIN3, INPUT)5
-    : pinMode(PAWPIN4, INPUT);
-    leftEar.attach(lefttappin)
-    rightEar(righttappin)
+  void setup() { 
+pinMode(LEDPIN, OUTPUT);
+  pinMode(PAWPIN1, INPUT);
+     pinMode(PAWPIN2, INPUT);
+  pinMode(PAWPIN3, INPUT);
+    pinMode(PAWPIN4, INPUT);
+    leftEar.attach(LEFTEAR5PIN);
+    rightEar.attach(RIGHTEARPIN);
 }
 void loop() {
 
   // If paw 1 is pressed then do the following
   if (digitalRead(PAWPIN1) == HIGH) {
     digitalWrite(LEDPIN, HIGH);
-    ｝
+  }
       // If paw 2 is pressed then do the following
-      if （digitalRead （PAWPIN2）＝ = HIGH）｛
+      if （digitalRead(PAWPIN2）＝= HIGH)｛
         digitalWrite(LEDPIN, LOW);
-    ｝
+      }
       // If paw 3 is pressed then do the following
       if (digitalRead(PAWPIN3) == HIGH) {
       playMusic();
-      ｝
-        //
-        If paw 4 is pressed then do the following if (digitalRead(PAWPIN4) == HIGH) {
+      }
+        //If paw 4 is pressed then do the following 
+        if (digitalRead(PAWPIN4) == HIGH) {
         int score = playGame();
       }
     }
